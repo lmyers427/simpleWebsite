@@ -2,20 +2,16 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const path = require('path');
-const corsOptions = require('../model/config/corsOptions');
 const PORT = process.env.PORT || 3000;
-const errorHandler = require('../middleware/errorHandler');
-const { logger } = require('../middleware/logEvents');
+
 
 //I might not need this here depending....
-const db = require('../model/config/database');
+//const db = require('../model/config/database');
 
 
-// custom middleware logger
-app.use(logger);
 
-//Cross Origin Resource Sharing
-app.use(cors(corsOptions));
+
+
 
 
 // built-in middleware to handle urlencoded form data
@@ -28,8 +24,6 @@ app.use(express.json());
 app.use('/', express.static(path.join(__dirname, '/public')));
 
 //Routes 
-app.use('/', require('../routes/root'));
-app.use('/users', require('../routes/api/users'));
 
 
 app.all('*', (req, res) => {
@@ -46,7 +40,7 @@ app.all('*', (req, res) => {
     }
 });
 
-app.use(errorHandler);
+
 
 //PORT listening
 app.listen(PORT, () => console.log(`Server running on port ${PORT}.`));
