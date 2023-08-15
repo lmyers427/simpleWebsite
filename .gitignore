@@ -1,0 +1,6 @@
+#Ignore Environment Variables
+.env
+
+#Node_modules
+node_modules
+
