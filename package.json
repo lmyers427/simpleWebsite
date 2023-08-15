@@ -1,0 +1,19 @@
+{
+  "name": "mb-solutions-website",
+  "version": "1.0.0",
+  "description": "Simple Website for new company",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmyers427/simpleWebsite.git"
+  },
+  "author": "Lauren Myers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmyers427/simpleWebsite/issues"
+  },
+  "homepage": "https://github.com/lmyers427/simpleWebsite#readme"
+}
