@@ -126,7 +126,7 @@ img{
 .showcase-form {
     position: relative;
     top: 60px;
-    height: 350px;
+    height: 420px;
     width: 400px;
     padding: 40px;
     z-index: 100;
@@ -138,7 +138,8 @@ img{
 }
 
 .showcase-form input[type='text'],
-.showcase-form input[type='email'] {
+.showcase-form input[type='email'],
+.showcase-form input[type='tel'] {
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
@@ -223,8 +224,7 @@ img{
 }
 
 .languages .card h4 {
-
-    font-size: 14px;
+    font-size: 17px;
     margin-bottom: 10px;
 }
 
@@ -369,7 +369,7 @@ img{
     
     .showcase-text {
         text-align: center;
-        margin-top: 40px;
+        margin-top: 30px;
         animation: slideInFromTop 1s ease-in ;
     }
 
