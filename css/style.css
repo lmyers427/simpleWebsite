@@ -70,18 +70,22 @@ img{
 .navbar{
     background-color: var(--primary-color) ;
     color: #fff;
-    height: 70px;
+    height: 300px;
+    
 }
 
 .navbar ul {
     display: flex;
+    
 }
 
 .navbar a{
 
     color: #fff;
-    padding: 10px;
-    margin: 0 5px; 
+    padding: 5px;
+    margin: 0 5px;
+
+ 
 }
 
 .navbar a:hover {
@@ -90,7 +94,15 @@ img{
 
 .navbar .flex {
     justify-content: space-between;
+
+    overflow: hidden;
+    
+    
 }
+
+
+
+
 /*Showcase*/
 .showcase {
 
@@ -218,8 +230,9 @@ img{
 .languages .card{
 
     text-align: center;
-    margin: 18px 10px 40px;
+    margin: 200px 10px 40px;
     transition: transform 0.2s ease-in;
+    width: 150px;
 
 }
 
@@ -417,7 +430,7 @@ img{
 @media(max-width: 500px){
     
     .navbar{
-        height: 110px;
+        height: 500px;
     }
 
     .navbar .flex {
